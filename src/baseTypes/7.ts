@@ -14,10 +14,7 @@ enum Week {
 }
 
 const isWeekend = (weekDay: string): boolean => {
-  if (weekDay === "SAT" || weekDay === "SUN") {
-    return true;
-  }
-  return false;
+  return weekDay === "SAT" || weekDay === "SUN";
 };
 
 console.log(isWeekend(Week.MON));
